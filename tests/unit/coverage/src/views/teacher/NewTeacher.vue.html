@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/views/teacher/NewTeacher.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/views/teacher</a> NewTeacher.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/11</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div&gt;
+    &lt;el-container&gt;
+      &lt;teacher-header&gt;&lt;/teacher-header&gt;
+    &lt;/el-container&gt;
+    &lt;el-container class="container"&gt;
+      &lt;el-aside width="200px" class="aside"&gt;
+        &lt;teacher-bar&gt;&lt;/teacher-bar&gt;
+      &lt;/el-aside&gt;
+&nbsp;
+      &lt;el-container&gt;
+        &lt;el-header class="header"&gt;
+          &lt;span class="span-css"&gt;
+            &lt;a class="action-css" @click="newTeacherVisible = true"&gt;
+              &lt;i class="el-icon-circle-plus-outline"&gt;&lt;/i&gt;新增账号
+            &lt;/a&gt;
+          &lt;/span&gt;
+          &lt;span class="span-css"&gt;
+            &lt;a class="action-css" @click="deleteTeacher()"&gt;
+              &lt;i class="el-icon-circle-close"&gt;&lt;/i&gt;删除账号
+            &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/el-header&gt;
+&nbsp;
+        &lt;el-main&gt;
+          &lt;el-table
+            :data="tableData"
+            border
+            ref="multipleTable"
+            @selection-change="handleSelectionChange"
+          &gt;
+            &lt;el-table-column type="selection" align="center" width="50"&gt;&lt;/el-table-column&gt;
+            &lt;el-table-column type="index" align="center" label="序号" width="150"&gt;&lt;/el-table-column&gt;
+            &lt;el-table-column prop="id" align="center" label="账号" width="300"&gt;&lt;/el-table-column&gt;
+            &lt;el-table-column prop="organization" align="center" label="所属机构"&gt;&lt;/el-table-column&gt;
+          &lt;/el-table&gt;
+        &lt;/el-main&gt;
+      &lt;/el-container&gt;
+    &lt;/el-container&gt;
+    &lt;!--注册教师账号弹框 --&gt;
+    &lt;el-dialog title="注册教师账号" :visible.sync="newTeacherVisible" width="30%"&gt;
+      &lt;el-form :model="newTeacherForm"&gt;
+        &lt;el-form-item label="账号" :label-width="newTeacherFormLabelWidth"&gt;
+          &lt;el-input v-model="newTeacherForm.newTeacherId" autocomplete="off"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="所属机构" :label-width="newTeacherFormLabelWidth"&gt;
+          &lt;el-input v-model="newTeacherForm.newTeacherOrganization" autocomplete="off"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-form&gt;
+      &lt;div slot="footer" class="dialog-footer"&gt;
+        &lt;el-button @click="newTeacherVisible = false"&gt;取 消&lt;/el-button&gt;
+        &lt;el-button type="primary" @click="newTeacher"&gt;确 定&lt;/el-button&gt;
+      &lt;/div&gt;
+    &lt;/el-dialog&gt;
+    &lt;!--删除教师弹框 --&gt;
+    &lt;el-dialog title="提示" :visible.sync="deleteTeacherVisible" width="30%"&gt;
+      &lt;span&gt;确认删除&lt;/span&gt;
+      &lt;span v-for="item in multipleSelection " :key="item.id"&gt;{{ item.id }}&amp;nbsp;&lt;/span&gt;
+      &lt;span&gt;？&lt;/span&gt;
+      &lt;span slot="footer" class="dialog-footer"&gt;
+        &lt;el-button @click="deleteTeacherVisible = false"&gt;取 消&lt;/el-button&gt;
+        &lt;el-button type="primary" @click="deleteTeacherFinal"&gt;确 定&lt;/el-button&gt;
+      &lt;/span&gt;
+    &lt;/el-dialog&gt;
+    &lt;!--警告弹框 --&gt;
+    &lt;el-dialog title="警告" :visible.sync="selectVisible" width="30%"&gt;
+      &lt;span&gt;未选中任何教师账号！&lt;/span&gt;
+      &lt;span slot="footer" class="dialog-footer"&gt;
+        &lt;el-button type="primary" @click="selectVisible = false"&gt;确 定&lt;/el-button&gt;
+      &lt;/span&gt;
+    &lt;/el-dialog&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import TeacherBar from '../../components/TeacherBar.vue'</span>
+<span class="cstat-no" title="statement not covered" >import TeacherHeader from '../../components/TeacherHeader.vue'</span>
+&nbsp;
+export default {
+  name: 'NewTeacher',
+  components: {
+    TeacherBar,
+    TeacherHeader
+  },
+  props: {},
+  data () {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      tableData: [
+        {
+          id: 't123456',
+          organization: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          id: 't123579',
+          organization: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          id: 't345678',
+          organization: '上海市普陀区金沙江路 1518 弄'
+        }, {
+          id: 't456789',
+          organization: '上海市普陀区金沙江路 1518 弄'
+        }
+      ],
+      newTeacherVisible: false,
+      deleteTeacherVisible: false,
+      selectVisible: false,
+      newTeacherForm: {
+        newTeacherId: '',
+        newTeacherOrganization: ''
+      },
+      newTeacherFormLabelWidth: '120px',
+      multipleSelection: []
+    }
+  },
+  methods: {
+    handleSelectionChange (val) {
+<span class="cstat-no" title="statement not covered" >      this.multipleSelection = val</span>
+    },
+    deleteTeacher () {
+<span class="cstat-no" title="statement not covered" >      if (this.multipleSelection.length === 0) {</span>
+<span class="cstat-no" title="statement not covered" >        this.selectVisible = true</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.deleteTeacherVisible = true</span>
+      }
+    },
+    newTeacher () {
+<span class="cstat-no" title="statement not covered" >      const that = this</span>
+<span class="cstat-no" title="statement not covered" >      that.newTeacherVisible = false</span>
+    },
+    deleteTeacherFinal () {
+<span class="cstat-no" title="statement not covered" >      const that = this</span>
+<span class="cstat-no" title="statement not covered" >      that.deleteTeacherVisible = false</span>
+    }
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.header {
+  text-align: left;
+  font-size: 16px medium;
+}
+&nbsp;
+.aside {
+  background-color: rgb(238, 241, 246);
+}
+&nbsp;
+.container {
+  height: 800px;
+  border: 1px solid rgb(238, 238, 238);
+}
+&nbsp;
+.span-css {
+  margin: 10px;
+  font-size: 17px;
+}
+&nbsp;
+.action-css {
+  cursor: pointer;
+  color: black;
+}
+&nbsp;
+a.action-css:hover {
+  color: #409eff;
+  font-weight: bold;
+}
+&nbsp;
+.el-header {
+  background-color: #b3c0d1;
+  color: #333;
+  line-height: 60px;
+}
+&nbsp;
+.el-aside {
+  color: #333;
+}
+&nbsp;
+.el-select {
+  float: left !important;
+}
+&nbsp;
+.el-dialog {
+  width: 100% !important;
+}
+&nbsp;
+.el-form {
+  margin-left: -55px !important;
+}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Aug 13 2019 12:30:27 GMT+0800 (China Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

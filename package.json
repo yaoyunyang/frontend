@@ -1,0 +1,51 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "eslint": "./node_modules/.bin/eslint ./src/**/*.vue ./src/**/***/*.vue ./src/*.{vue,js} ./tests/unit/*.spec.js",
+    "stylelint": "./node_modules/.bin/stylelint ./src/**/*.vue ./src/**/***/*.vue ./src/*.vue ./tests/unit/*.spec.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.11.1",
+    "universal-cookie": "^4.0.2",
+    "v-charts": "^1.19.0",
+    "vue": "^2.6.10",
+    "vue-calendar-component": "^2.8.2",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.0.2",
+    "iview": "^3.4.2",
+    "random": "^2.1.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint& npm run stylelint"
+    }
+  }
+}
